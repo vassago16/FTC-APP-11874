@@ -1,5 +1,5 @@
+package com.caps.bvs.TeamCode.CoboltCaps.OpModes;
 
-package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
@@ -9,12 +9,10 @@ import com.qualcomm.robotcore.hardware.I2cControllerPortDevice;
 import com.qualcomm.robotcore.hardware.usb.RobotArmingStateNotifier;
 import com.qualcomm.robotcore.util.RobotLog;
 
-/**
- * {@link TestMotorControllers} is a simple test that explores the behavior of
- */
+
 @Autonomous(name = "Test MC Flavors", group = "Tests")
 @Disabled
-public class TestMotorControllers extends LinearOpMode {
+public  class TestMotorControllers extends LinearOpMode {
     // We don't require all of these motors to be attached; we'll deal with what we find
     DcMotor legacyMotor;
     DcMotor v15Motor;
@@ -49,7 +47,7 @@ public class TestMotorControllers extends LinearOpMode {
         }
     }
 
-    DcMotor findMotor(String motorName) {
+   public  DcMotor findMotor(String motorName) {
         try {
             DcMotor motor = hardwareMap.dcMotor.get(motorName);
 
@@ -77,19 +75,19 @@ public class TestMotorControllers extends LinearOpMode {
         return null;
     }
 
-    void setModes(DcMotor.RunMode mode) {
+   public void setModes(DcMotor.RunMode mode) {
         if (legacyMotor != null) legacyMotor.setMode(mode);
         if (v15Motor != null) v15Motor.setMode(mode);
         if (v2Motor != null) v2Motor.setMode(mode);
     }
 
-    void setPowers(double power) {
+   public  void setPowers(double power) {
         if (legacyMotor != null) legacyMotor.setPower(power);
         if (v15Motor != null) v15Motor.setPower(power);
         if (v2Motor != null) v2Motor.setPower(power);
     }
 
-    void reportMotors() {
+  public   void reportMotors() {
         telemetry.addData("Motor Report", "");
         reportMotor("legacy motor: ", legacyMotor);
         reportMotor("v1.5 motor: ", v15Motor);
@@ -97,7 +95,7 @@ public class TestMotorControllers extends LinearOpMode {
         telemetry.update();
     }
 
-    void reportMotor(String caption, DcMotor motor) {
+    public void reportMotor(String caption, DcMotor motor) {
         if (motor != null) {
             int position = motor.getCurrentPosition();
             DcMotor.RunMode mode = motor.getMode();
