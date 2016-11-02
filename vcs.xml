@@ -6,8 +6,12 @@
           <option name="url" value="https://github.com/vassago16/FTC-APP-6547-Cobolt-Colts-.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/vassago16/FTC-APP-11874.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="B:\Android\CoboltColts" />
+    <option name="cloneParentDir" value="B:\Android\FTC-App-2016" />
   </component>
 </application>
