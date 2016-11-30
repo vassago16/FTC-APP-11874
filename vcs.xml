@@ -10,8 +10,12 @@
           <option name="url" value="https://github.com/vassago16/FTC-APP-11874.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/specialcode/ftc_11874_2016.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="B:\Android\FTC-App-2016" />
+    <option name="cloneParentDir" value="B:\Android\FTC-App-11874" />
   </component>
 </application>
